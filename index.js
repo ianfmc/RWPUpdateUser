@@ -14,7 +14,7 @@ exports.handler = function(event, context, callback) {
         Key : { 
           "email" : event.email.toString(),
         },
-        UpdateExpression: "set team = :a",
+        UpdateExpression: "set teams = :a",
         ExpressionAttributeValues:{
             ":a" : event.teams
         },
